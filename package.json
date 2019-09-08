@@ -1,0 +1,27 @@
+{
+  "name": "multiprocessnode",
+  "version": "1.0.0",
+  "description": "To take advantage of multicore we are using cluster and child process module of nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "noCluster": "node noCluster.js",
+    "siege:noCluster": "node siege.js 3001",
+    "withCluster": "node withCluster.js",
+    "siege:withCluster": "node siege.js 3002"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajayit28/multiProcessNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajayit28/multiProcessNode/issues"
+  },
+  "homepage": "https://github.com/ajayit28/multiProcessNode#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "siege": "^0.2.0"
+  }
+}
